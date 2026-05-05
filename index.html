@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+
+    <title>WDD 131 – Dynamic Web Fundamentals – Kwadwo Adu Nsiah Ahenkan</title>
+
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals | Kwadwo Adu Nsiah Ahenkan | personal profile, web development resources, HTML, CSS, responsive web design">
+
+    <meta name="author" content="Kwadwo Adu Nsiah Ahenkan">
+
+    <link rel="stylesheet" href="week01/styles/base.css">
+
+    <script src="week01/scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 131 - Kwadwo Ahenkan</h1>
+
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/heb/11?lang=eng">
+                        Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Kwadwo Adu Nsiah Ahenkan</h1>
+
+        <section class="card">
+
+            <h2>About Me</h2>
+
+            <div class="about-content">
+                <p>
+                    My name is Kwadwo Adu Nsiah Ahenkan. I am passionate about
+                    web development, engineering, and agriculture.
+                    I enjoy learning new skills and building meaningful projects.
+                </p>
+
+                <img src="week01/images/profile.jpg" alt="Portrait of Kwadwo Adu Nsiah Ahenkan">
+            </div>
+
+            <div class="location">
+                <h3>Accra, Ghana</h3>
+
+                <div class="location-content">
+
+                    <figure>
+                        <img src="week01/images/ghana-flag.jpg" alt="Official flag of Ghana">
+                        <figcaption>Official Flag of Ghana</figcaption>
+                    </figure>
+
+                    <div class="location-text">
+                        <p>
+                            Accra is the capital of Ghana, located on the Atlantic
+                            coast of West Africa. It is the economic and cultural
+                            hub of the country, known for its vibrant markets,
+                            hospitality, and growing technology ecosystem.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="card">
+
+            <h2>Web Dev Resources</h2>
+
+            <ul class="resources">
+                <li><a href="https://dev.to/">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/">Udemy</a></li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Kwadwo Adu Nsiah Ahenkan | Accra, Ghana
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
+
 </html>
