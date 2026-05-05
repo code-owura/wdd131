@@ -1,12 +1,4 @@
-/* ========================================= */
-/* GOOGLE FONTS */
-/* ========================================= */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap');
 
-
-/* ========================================= */
-/* RESET */
-/* ========================================= */
 * {
     margin: 0;
     padding: 0;
@@ -82,7 +74,7 @@ main {
     padding: 0 1rem;
 
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 1.2rem;
 }
 
