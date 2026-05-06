@@ -180,14 +180,13 @@ main h1 {
 }
 
 .resources a {
-    color: #5e17eb;
+    color: #222;
     text-decoration: none;
 }
 
 .resources a:hover {
     text-decoration: underline;
 }
-
 
 /* ========================================= */
 /* FOOTER */
