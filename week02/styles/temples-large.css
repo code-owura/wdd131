@@ -1,0 +1,74 @@
+/* ===== Larger View (Tablet & Desktop) ===== */
+@media (min-width: 640px) {
+
+    /* Hide hamburger on larger screens */
+    #hamburger {
+        display: none;
+    }
+
+    /* HEADER becomes horizontal */
+    header {
+        padding: 1rem 2rem;
+        flex-wrap: nowrap;
+    }
+
+    /* NAV becomes horizontal flex */
+    nav {
+        display: flex;
+        /* Always visible */
+        width: auto;
+        background-color: transparent;
+        margin-top: 0;
+    }
+
+    nav ul {
+        flex-direction: row;
+        /* ✅ Horizontal layout */
+        gap: 1rem;
+    }
+
+    nav ul li {
+        border-bottom: none;
+    }
+
+    nav ul li a {
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+    }
+
+    /* MAIN — wider container, centered */
+    main {
+        max-width: 900px;
+        /* ✅ Limit and center */
+        margin: 0 auto;
+        padding: 2rem;
+
+        grid-template-columns: repeat(3, 1fr);
+        /* ✅ 3-column grid */
+        gap: 1.5rem;
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+    figure {
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+/* ===== Extra Large Screens ===== */
+@media (min-width: 1024px) {
+
+    main {
+        max-width: 1000px;
+        gap: 2rem;
+    }
+
+    header p {
+        font-size: 1.75rem;
+    }
+}
