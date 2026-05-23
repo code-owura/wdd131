@@ -1,18 +1,14 @@
-// FOOTER YEAR
 const currentYear = document.querySelector("#currentyear");
 
 currentYear.textContent = new Date().getFullYear();
 
-// LAST MODIFIED
 const lastModified = document.querySelector("#lastModified");
 
 lastModified.textContent = `Last Modified: ${document.lastModified}`;
 
-// STATIC WEATHER VALUES
 const temperature = 10;
 const windSpeed = 5;
 
-// WIND CHILL FUNCTION
 function calculateWindChill(temp, speed) {
     return (
         13.12 +
@@ -22,7 +18,6 @@ function calculateWindChill(temp, speed) {
     ).toFixed(1);
 }
 
-// DISPLAY WIND CHILL
 const windChill = document.querySelector("#windchill");
 
 if (temperature <= 10 && windSpeed > 4.8) {
