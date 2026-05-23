@@ -1,73 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore China and discover its culture, landmarks, weather, and travel information.</title>
-    <meta name="description" content="Explore my personal travel journal featuring a beautiful country I have visited. Discover the best landmarks, local food, and hidden gems!">
+    <meta name="description"
+        content="Explore my personal travel journal featuring a beautiful country I have visited. Discover the best landmarks, local food, and hidden gems!">
     <meta name="author" content="Kwadwo Adu Nsiah Ahenkan">
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>China</h1>
     </header>
 
-    <section class="hero">
-    
-        <picture>
-            <source media="(min-width: 768px)" srcset="images/china-large.webp" />
-    
-            <img src="images/china-small.webp" alt="Beautiful scenery in China" class="hero-img" />
-        </picture>
-    
-        <section class="card data-card">
-            <h2>Data</h2>
-    
-            <div class="card-content">
-                <p><strong>Area:</strong> 9,596,961 sq km</p>
-                <p><strong>Population:</strong> 1.4 Billion</p>
-                <p><strong>Capital:</strong> Beijing</p>
-                <p><strong>Languages:</strong> Mandarin</p>
-                <p><strong>Currency:</strong> Chinese Yuan</p>
-                <p><strong>Time Zone:</strong> UTC+8</p>
-                <p><strong>Calling Code:</strong> +86</p>
-                <p><strong>Internet TLD:</strong> .cn</p>
-            </div>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/china-large.webp" />
+                <img src="images/china-small.webp" alt="Beautiful scenery in China" class="hero-img" />
+            </picture>
+
+            <section class="card data-card">
+                <h2>Data</h2>
+                <div class="card-content">
+                    <p><strong>Area:</strong> 9,596,961 sq km</p>
+                    <p><strong>Population:</strong> 1.4 Billion</p>
+                    <p><strong>Capital:</strong> Beijing</p>
+                    <p><strong>Languages:</strong> Mandarin</p>
+                    <p><strong>Currency:</strong> Chinese Yuan</p>
+                    <p><strong>Time Zone:</strong> UTC+8</p>
+                    <p><strong>Calling Code:</strong> +86</p>
+                    <p><strong>Internet TLD:</strong> .cn</p>
+                </div>
+            </section>
+
+            <section class="card weather-card">
+                <h2>Weather</h2>
+                <img src="images/weather.svg" alt="Weather Icon" class="mobile-weather-icon" />
+                <div class="card-content">
+                    <p><strong>Temperature:</strong> <span id="temperature">10</span> °C</p>
+                    <p><strong>Conditions:</strong> Partly Cloudy</p>
+                    <p><strong>Wind:</strong> <span id="windspeed">5</span> km/h</p>
+                    <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+                </div>
+            </section>
+
         </section>
-    
-        <section class="card weather-card">
-            <h2>Weather</h2>
-    
-            <img src="images/weather.svg" alt="Weather Icon" class="mobile-weather-icon" />
-    
-            <div class="card-content">
-                <p><strong>Temperature:</strong> <span id="temperature">10</span> °C</p>
-    
-                <p><strong>Conditions:</strong> Partly Cloudy</p>
-    
-                <p><strong>Wind:</strong> <span id="windspeed">5</span> km/h</p>
-    
-                <p>
-                    <strong>Wind Chill:</strong>
-                    <span id="windchill"></span>
-                </p>
-            </div>
-        </section>
-    
-    </section>
-    
     </main>
-    
+
     <footer>
         <p>
             &copy;<span id="currentyear"></span>
             🌴 Kwadwo Adu Nsiah Ahenkan 🌴 Ghana
         </p>
-    
         <p id="lastModified"></p>
     </footer>
 
 </body>
+
 </html>
