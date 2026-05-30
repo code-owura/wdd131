@@ -1,3 +1,4 @@
+/* ===== CSS Variables (Color Scheme) ===== */
 :root {
     --primary-color: #4b0082;
     --primary-dark: #2e004f;
@@ -9,6 +10,7 @@
     --border-color: #000000;
 }
 
+/* ===== Global Reset ===== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -23,6 +25,7 @@ body {
     line-height: 1.5;
 }
 
+/* ===== HEADER ===== */
 header {
     background-color: var(--primary-color);
     color: var(--text-light);
@@ -38,6 +41,7 @@ header p {
     font-weight: 700;
 }
 
+/* ===== Hamburger Button ===== */
 #hamburger {
     background: none;
     border: 1px solid var(--text-light);
@@ -48,6 +52,7 @@ header p {
     border-radius: 4px;
 }
 
+/* ===== NAVIGATION ===== */
 nav {
     display: none;
     width: 100%;
@@ -85,6 +90,7 @@ nav a:hover {
     color: var(--primary-dark);
 }
 
+/* ===== MAIN ===== */
 main {
     max-width: 360px;
     margin: 0 auto;
@@ -137,13 +143,15 @@ figure .label {
 
 figure img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
     display: block;
     border: 1px solid var(--border-color);
     margin-top: 1rem;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* ===== FOOTER ===== */
 footer {
     background-color: var(--primary-color);
     color: var(--text-light);
@@ -157,6 +165,9 @@ footer p {
     margin: 0.25rem 0;
 }
 
+/* ============================================================ */
+/* TABLET VIEW (medium screens) */
+/* ============================================================ */
 @media screen and (min-width: 640px) {
     main {
         max-width: 700px;
@@ -166,13 +177,24 @@ footer p {
     figure {
         max-width: 100%;
     }
+
+    figure img {
+        height: 220px;
+    }
 }
 
+/* ============================================================ */
+/* DESKTOP VIEW (large screens) */
+/* ============================================================ */
 @media screen and (min-width: 1024px) {
     main {
         max-width: 1200px;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 2rem;
+    }
+
+    figure img {
+        height: 250px;
     }
 
     #hamburger {

@@ -36,6 +36,7 @@ hamburger.addEventListener('click', () => {
     }
 });
 
+
 /* ===== Temple Data Array ===== */
 
 const temples = [
@@ -101,7 +102,7 @@ const temples = [
     // ============================================================
 
     {
-        templeName: "Accra Ghana",            // ← NEW #1
+        templeName: "Accra Ghana",
         location: "Accra, Ghana",
         dedicated: "2004, January, 11",
         area: 17500,
@@ -109,7 +110,7 @@ const temples = [
             "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-13760-main.jpg"
     },
     {
-        templeName: "Salt Lake",              // ← NEW #2
+        templeName: "Salt Lake",
         location: "Salt Lake City, Utah, United States",
         dedicated: "1893, April, 6",
         area: 253015,
@@ -117,7 +118,7 @@ const temples = [
             "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-15669-main.jpg"
     },
     {
-        templeName: "Rome Italy",             // ← NEW #3
+        templeName: "Rome Italy",
         location: "Rome, Italy",
         dedicated: "2019, March, 10",
         area: 41010,
@@ -125,15 +126,15 @@ const temples = [
             "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642-main.jpg"
     },
     {
-        templeName: "Bangkok Thailand",       // ← NEW #4
+        templeName: "Bangkok Thailand",
         location: "Bangkok, Thailand",
         dedicated: "2023, October, 22",
         area: 44405,
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/bangkok-thailand-temple/bangkok-thailand-temple-40037-main.jpg"
     }
-    // Add more temple objects here...
 ];
+
 
 /* ===== Create Temple Cards ===== */
 
@@ -187,6 +188,7 @@ function displayTemples(templeList) {
 
 // Display all temples when the page loads
 displayTemples(temples);
+
 
 /* ===== Filter Temples by Navigation Menu ===== */
 
