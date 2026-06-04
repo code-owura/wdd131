@@ -1,0 +1,286 @@
+/* ===== CSS Variables (Color Schema) ===== */
+:root {
+    --primary-color: #006400;
+    --secondary-color: #FFFFFF;
+    --accent-color: #FFD700;
+    --text-color: #333333;
+    --light-gray: #f5f5f5;
+}
+
+/* ===== Global Reset ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* ===== HEADER (LOGO + NAV) ===== */
+header {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+.logo-box {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.logo-image {
+    max-width: 150px;
+    height: auto;
+    display: block;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    flex: 2;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+nav ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* ===== HERO BANNER ===== */
+.hero-banner {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.hero-banner h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ===== MAIN ===== */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* DETAILS SECTIONS */
+.details {
+    background-color: var(--light-gray);
+    border-left: 5px solid var(--primary-color);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.details h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.details h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.details p {
+    margin-bottom: 0.75rem;
+}
+
+.details ul {
+    margin-left: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.details li {
+    margin-bottom: 0.5rem;
+}
+
+/* ===== Typography Examples ===== */
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+}
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+/* ===== Color Schema Boxes ===== */
+.color-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #333;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    border-radius: 3px;
+}
+
+.color-box.primary {
+    background-color: #006400;
+}
+
+.color-box.secondary {
+    background-color: #FFFFFF;
+}
+
+.color-box.accent {
+    background-color: #FFD700;
+}
+
+.color-box.text {
+    background-color: #333333;
+}
+
+/* ===== WIREFRAMES ===== */
+.wireframe {
+    background-color: var(--secondary-color);
+    border: 2px dashed var(--primary-color);
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+}
+
+.mobile-wireframe {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.desktop-wireframe {
+    max-width: 100%;
+}
+
+.wf-block {
+    background-color: var(--light-gray);
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.wf-header-block,
+.wf-footer-block,
+.wf-logo-block {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.wf-banner-block {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 2rem 1rem;
+}
+
+.wf-header-desktop {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.wf-header-desktop .wf-block {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.wf-cards-desktop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.wf-cards-desktop .wf-block {
+    margin-bottom: 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: bold;
+}
+
+/* ============================================================ */
+/* MOBILE VIEW (under 768px) */
+/* ============================================================ */
+@media screen and (max-width: 768px) {
+
+    /* Header stacks vertically */
+    header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .logo-box {
+        padding: 0.75rem;
+    }
+
+    .logo-image {
+        max-width: 100px;
+    }
+
+    nav {
+        padding: 0.75rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+
+    /* Hero banner smaller on mobile */
+    .hero-banner h1 {
+        font-size: 1.5rem;
+    }
+}
