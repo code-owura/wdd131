@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========================================= */
+/* SCREEN READER ONLY (Accessibility) */
+/* ========================================= */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+/* ========================================= */
+/* BODY */
+/* ========================================= */
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    background-color: #e9e9e9;
+    color: #222;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ========================================= */
+/* HEADER */
+/* ========================================= */
+header {
+    background-color: #2c3e6b;
+    color: white;
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.6rem;
+    padding: 1rem;
+    color: white;
+    font-weight: 700;
+}
+
+
+/* ========================================= */
+/* MAIN */
+/* ========================================= */
+main {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    width: 100%;
+    flex: 1;
+}
+
+main h1 {
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.9rem;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+    color: #222;
+}
+
+
+/* ========================================= */
+/* CARD STYLING */
+/* ========================================= */
+.card {
+    background-color: #f8f8f8;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: #2c3e6b;
+    color: white;
+    text-align: center;
+    padding: 0.9rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+
+/* ========================================= */
+/* FORM */
+/* ========================================= */
+form {
+    padding: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 0.4rem;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    padding: 0.75rem;
+    border: 1px solid #555;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    font-family: inherit;
+    background-color: white;
+    color: #222;
+    min-height: 48px;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid #2c3e6b;
+    border-color: #2c3e6b;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+
+/* ========================================= */
+/* RATING */
+/* ========================================= */
+.rating {
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+.rating legend {
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+    color: #222;
+}
+
+.rating-options {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.rating-options label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: normal;
+    margin: 0;
+    padding: 0.5rem;
+    min-width: 48px;
+    min-height: 48px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.rating-options label:hover {
+    background-color: #eee;
+}
+
+.rating-options span {
+    color: #222;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.rating-options input[type="radio"] {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+
+/* ========================================= */
+/* FEATURES */
+/* ========================================= */
+.features {
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+.features legend {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.features legend em {
+    font-weight: normal;
+    color: #444;
+    display: block;
+    font-size: 0.9rem;
+}
+
+.features label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: normal;
+    background-color: #eee;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: #222;
+    min-height: 48px;
+}
+
+.features label:hover {
+    background-color: #ddd;
+}
+
+.features input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+/* ========================================= */
+/* OPTIONAL LABEL */
+/* ========================================= */
+.optional {
+    color: #4a148c;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+
+/* ========================================= */
+/* SUBMIT BUTTON */
+/* ========================================= */
+input[type="submit"] {
+    background-color: #ccc;
+    color: #222;
+    border: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    transition: 0.3s ease;
+    font-family: inherit;
+    width: 100%;
+    min-height: 48px;
+}
+
+input[type="submit"]:hover {
+    background-color: #2c3e6b;
+    color: white;
+}
+
+
+/* ========================================= */
+/* CONFIRMATION (review.html) */
+/* ========================================= */
+.confirmation {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.confirmation p {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    color: #222;
+}
+
+.counter {
+    background-color: #eef1f8;
+    padding: 1rem;
+    border-radius: 4px;
+    color: #2c3e6b;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+/* ========================================= */
+/* FOOTER */
+/* ========================================= */
+footer {
+    background-color: #2c3e6b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}

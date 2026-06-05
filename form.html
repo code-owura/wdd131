@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WDD 131 – Product Review – Kwadwo Adu Nsiah Ahenkan</title>
+
+    <meta name="description"
+        content="WDD 131 – Product Review Form | Kwadwo Adu Nsiah Ahenkan | submit a product review for the Back to the Future product line">
+
+    <meta name="author" content="Kwadwo Adu Nsiah Ahenkan">
+
+    <link rel="stylesheet" href="styles/form.css">
+
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <span id="course-title">WDD 131 – Product Review</span>
+    </header>
+
+    <main>
+
+        <h1>Product Review</h1>
+
+        <section class="card">
+
+            <h2>Submit Your Review</h2>
+
+            <form method="get" action="review.html">
+
+                <div class="form-group">
+                    <label for="product">Product Name</label>
+                    <select id="product" name="product" required>
+                        <option value="" disabled selected>Choose a Product ...</option>
+                    </select>
+                </div>
+
+                <fieldset class="rating">
+                    <legend>Overall Rating</legend>
+
+                    <div class="rating-options">
+                        <label for="rating1">
+                            <span aria-hidden="true">&star;</span>
+                            <span class="sr-only">1 star</span>
+                            <input type="radio" id="rating1" name="rating" value="1" required>
+                        </label>
+                        <label for="rating2">
+                            <span aria-hidden="true">&star;&star;</span>
+                            <span class="sr-only">2 stars</span>
+                            <input type="radio" id="rating2" name="rating" value="2">
+                        </label>
+                        <label for="rating3">
+                            <span aria-hidden="true">&star;&star;&star;</span>
+                            <span class="sr-only">3 stars</span>
+                            <input type="radio" id="rating3" name="rating" value="3">
+                        </label>
+                        <label for="rating4">
+                            <span aria-hidden="true">&star;&star;&star;&star;</span>
+                            <span class="sr-only">4 stars</span>
+                            <input type="radio" id="rating4" name="rating" value="4">
+                        </label>
+                        <label for="rating5">
+                            <span aria-hidden="true">&star;&star;&star;&star;&star;</span>
+                            <span class="sr-only">5 stars</span>
+                            <input type="radio" id="rating5" name="rating" value="5">
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="install-date">Date of Installation</label>
+                    <input type="date" id="install-date" name="installDate" required>
+                </div>
+
+                <fieldset class="features">
+                    <legend>
+                        Which features did you find useful in the product?
+                        <em>(Check all that apply)</em>
+                    </legend>
+
+                    <label for="durability">
+                        <input type="checkbox" id="durability" name="features" value="Durability">
+                        Durability
+                    </label>
+                    <label for="ease-of-use">
+                        <input type="checkbox" id="ease-of-use" name="features" value="Ease of Use">
+                        Ease of Use
+                    </label>
+                    <label for="performance">
+                        <input type="checkbox" id="performance" name="features" value="Performance">
+                        Performance
+                    </label>
+                    <label for="design">
+                        <input type="checkbox" id="design" name="features" value="Design">
+                        Design
+                    </label>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="review">
+                        Written Review <span class="optional">(Optional)</span>
+                    </label>
+                    <textarea id="review" name="review" rows="5"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="username">
+                        Your Name <span class="optional">(Optional)</span>
+                    </label>
+                    <input type="text" id="username" name="username">
+                </div>
+
+                <input type="submit" value="Post Review">
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Kwadwo Adu Nsiah Ahenkan | Accra, Ghana
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
