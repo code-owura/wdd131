@@ -314,3 +314,83 @@ footer {
     padding: 1rem;
     font-size: 0.9rem;
 }
+
+
+/* ========================================= */
+/* RESPONSIVE - TABLET (768px and up) */
+/* ========================================= */
+@media screen and (min-width: 768px) {
+    main {
+        max-width: 600px;
+        padding: 0 2rem;
+    }
+
+    main h1 {
+        font-size: 2.2rem;
+    }
+
+    .card h2 {
+        font-size: 1.3rem;
+    }
+
+    form {
+        padding: 2rem;
+    }
+
+    #course-title {
+        font-size: 1.8rem;
+    }
+}
+
+
+/* ========================================= */
+/* RESPONSIVE - DESKTOP (1024px and up) */
+/* ========================================= */
+@media screen and (min-width: 1024px) {
+    main {
+        max-width: 700px;
+    }
+
+    main h1 {
+        font-size: 2.5rem;
+    }
+
+    .rating-options span {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* ========================================= */
+/* RESPONSIVE - MOBILE (under 480px) */
+/* ========================================= */
+@media screen and (max-width: 480px) {
+    main {
+        padding: 0 0.5rem;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+    }
+
+    #course-title {
+        font-size: 1.3rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    .rating-options {
+        gap: 0.25rem;
+    }
+
+    .rating-options label {
+        min-width: 44px;
+        padding: 0.3rem;
+    }
+
+    .rating-options span {
+        font-size: 0.85rem;
+    }
+}
