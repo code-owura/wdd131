@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Football Teams - KickOff Central</title>
+    <meta name="description"
+        content="Discover the most famous football clubs from major leagues around the world on KickOff Central.">
+    <meta name="author" content="Kwadwo Adu Nsiah Ahenkan">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/teams.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="images/kickoff-central.webp" alt="KickOff Central Logo" class="logo-image" width="80" height="80">
+            <h2 class="site-name">KickOff Central</h2>
+        </div>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">☰</button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="teams.html" class="active">Teams</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-banner small">
+            <div class="hero-text">
+                <h1>Famous Football Teams</h1>
+                <p>Explore some of the world's top football clubs</p>
+            </div>
+        </section>
+
+        <section class="filter-section">
+            <label for="league-filter">Filter by League:</label>
+            <select id="league-filter">
+                <option value="all">All Leagues</option>
+                <option value="Premier League">Premier League</option>
+                <option value="La Liga">La Liga</option>
+                <option value="Serie A">Serie A</option>
+                <option value="Bundesliga">Bundesliga</option>
+                <option value="Ligue 1">Ligue 1</option>
+            </select>
+        </section>
+
+        <section class="teams-grid" id="teams-grid">
+            <!-- Teams loaded dynamically by JavaScript -->
+        </section>
+
+        <section class="featured-image">
+            <img src="images/trophy.webp" alt="Football championship trophy on display" width="800" height="450"
+                loading="lazy">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> KickOff Central | Kwadwo Adu Nsiah Ahenkan | Accra, Ghana</p>
+        <p id="lastModified"></p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+</body>
+
+</html>
