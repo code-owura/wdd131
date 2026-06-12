@@ -153,15 +153,15 @@ main {
     margin-bottom: 1rem;
 }
 
-/* ===== CARD GRID ===== */
-.card-grid {
+/* ===== INFO GRID (renamed from card-grid) ===== */
+.info-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
     margin: 2rem 0;
 }
 
-.card {
+.info-card {
     background-color: var(--light-gray);
     border-left: 5px solid var(--primary-color);
     padding: 1.5rem;
@@ -170,11 +170,11 @@ main {
     transition: transform 0.3s;
 }
 
-.card:hover {
+.info-card:hover {
     transform: translateY(-5px);
 }
 
-.card h3 {
+.info-card h3 {
     color: var(--primary-color);
     margin-bottom: 0.75rem;
     font-family: Georgia, serif;
@@ -220,8 +220,8 @@ main {
     font-style: italic;
 }
 
-/* ===== BUTTONS ===== */
-.btn-primary {
+/* ===== FACT BUTTON (renamed from btn-primary) ===== */
+.fact-button {
     background-color: var(--primary-color);
     color: white;
     border: none;
@@ -233,11 +233,12 @@ main {
     transition: background-color 0.3s;
 }
 
-.btn-primary:hover {
+.fact-button:hover {
     background-color: #004d00;
 }
 
-.btn-danger {
+/* ===== CLEAR BUTTON (renamed from btn-danger) ===== */
+.clear-button {
     background-color: var(--danger);
     color: white;
     border: none;
@@ -249,7 +250,7 @@ main {
     margin-top: 1rem;
 }
 
-.btn-danger:hover {
+.clear-button:hover {
     background-color: #8b0000;
 }
 
@@ -311,7 +312,8 @@ main {
     font-family: Georgia, serif;
 }
 
-.form-group {
+/* ===== INPUT BLOCK (renamed from form-group) ===== */
+.input-block {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
@@ -421,7 +423,7 @@ input[type="submit"]:hover {
     color: var(--primary-color);
 }
 
-.remove-btn {
+.remove-button {
     background-color: var(--danger);
     color: white;
     border: none;
@@ -430,7 +432,7 @@ input[type="submit"]:hover {
     cursor: pointer;
 }
 
-.remove-btn:hover {
+.remove-button:hover {
     background-color: #8b0000;
 }
 
@@ -488,7 +490,7 @@ footer a:hover {
 /* TABLET & DESKTOP */
 /* ============================================================ */
 @media screen and (min-width: 768px) {
-    .card-grid {
+    .info-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 

@@ -25,12 +25,12 @@ function displayFavorites() {
                 <p><strong>Rating:</strong> ${stars}</p>
                 ${fav.comments ? `<p><em>"${fav.comments}"</em></p>` : ""}
             </div>
-            <button class="remove-btn" data-index="${index}">Remove</button>
+            <button class="remove-button" data-index="${index}">Remove</button>
         `;
         favoritesList.appendChild(item);
     });
 
-    document.querySelectorAll(".remove-btn").forEach(btn => {
+    document.querySelectorAll(".remove-button").forEach(btn => {
         btn.addEventListener("click", (e) => {
             const index = parseInt(e.target.dataset.index);
             removeFavorite(index);

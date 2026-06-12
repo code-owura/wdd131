@@ -41,12 +41,12 @@
             <h2>Add a Favorite Team</h2>
             <form id="favorite-form" method="get" action="favorites.html">
 
-                <div class="form-group">
+                <div class="input-block">
                     <label for="team-name">Team Name <span class="required">*</span></label>
                     <input type="text" id="team-name" name="team-name" required>
                 </div>
 
-                <div class="form-group">
+                <div class="input-block">
                     <label for="league">League <span class="required">*</span></label>
                     <select id="league" name="league" required>
                         <option value="" disabled selected>Select a League ...</option>
@@ -90,7 +90,7 @@
                     </div>
                 </fieldset>
 
-                <div class="form-group">
+                <div class="input-block">
                     <label for="comments">Why do you love this team? <span class="optional">(Optional)</span></label>
                     <textarea id="comments" name="comments" rows="4"></textarea>
                 </div>
@@ -103,7 +103,7 @@
             <h2>Your Favorite Teams</h2>
             <p id="favorites-count">You have 0 favorite teams.</p>
             <div id="favorites-list"></div>
-            <button id="clear-all-btn" class="btn-danger">Clear All Favorites</button>
+            <button id="clear-all-btn" class="clear-button">Clear All Favorites</button>
         </section>
     </main>
 
